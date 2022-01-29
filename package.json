@@ -1,0 +1,19 @@
+{
+  "name": "Simple-Discord-Moderator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@discordjs/voice": "^0.7.5",
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0",
+    "sqlite3": "^5.0.2"
+  }
+}
