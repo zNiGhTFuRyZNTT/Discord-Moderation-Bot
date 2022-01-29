@@ -10,7 +10,7 @@ module.exports = {
     execute(msg, args) {
         const helpEmbed = new Discord.MessageEmbed()
         .setColor('#0099ff')
-        .setAuthor('Twitch', 'https://cdn.discordapp.com/attachments/820259991955963945/922443765006880838/twitch_macos_bigsur_icon_189608.png', 'https://www.twitch.tv/bardia_bsh')
+        .setAuthor('instagram', 'https://cdn.discordapp.com/attachments/813485505697021962/936895569329274880/instagram.png', 'https://www.instagram.com/quera.ir')
         // .setDescription(message)
         .setThumbnail('https://cdn.discordapp.com/attachments/820259991955963945/923045886546821150/discord_alt_macos_bigsur_icon_190236.png')
         .addFields(
