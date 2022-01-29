@@ -103,16 +103,10 @@ bot.on('messageCreate', async msg => {
     for (const channelID of channelIDs) {
       sendToChannel(bot, channelID, title, content, channelIDs, image)
     }
-    // msg.reply(`to: ${to}\n content: ${content}`)
+    msg.reply(`[>] message send ✅\n channels: ${channelIDs.map(id => {
+      return `<#${id}>`
+    }).join(' ')}`)
 
-
-
-    // for (const mention of mentions) {
-    //   if (mention.includes("<#")) {
-    //     let chat = mention.slice(2, mention.length - 1)
-    //     mentioned_chats.push(chat)
-    //   }
-    // }
   } 
 
 
