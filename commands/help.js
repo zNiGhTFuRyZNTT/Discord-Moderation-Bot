@@ -14,7 +14,7 @@ module.exports = {
         // .setDescription(message)
         .setThumbnail('https://cdn.discordapp.com/attachments/820259991955963945/923045886546821150/discord_alt_macos_bigsur_icon_190236.png')
         .addFields(
-            { name: `Command: __**\`${prefix}send\` **__\nDescription: \`Send message to a chat\``, value: `Usage: **\`\`\`${prefix}send <chat_id> -\n <message here> \`\`\`**`,  },
+            { name: `Command: __**\`${prefix}send\` **__\nDescription: \`Send message to a chat\``, value: `Usage: **\`\`\`${prefix}send -\n<image_url> -\n<title> -\n<message here> \n<mention chats> \`\`\`**`,  },
             { name: '\u200B', value: '\u200B' },
 
             { name: `__**${prefix}join **__:`, value: `\n**\`${prefix}join <voiceid> \`**`, inline: true },
