@@ -24,7 +24,7 @@ async function connectToChannel(channel) {
 module.exports = {
     name: 'join',
     description: "Joins the given voice channel",
-    execute(msg, args) {
+    execute(msg, args, bot = null) {
         const channel = msg.guild.channels.cache.get(args[0]);
         console.log(channel);
         console.log(args[0]);

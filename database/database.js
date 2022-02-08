@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose()
-const db = new sqlite3.Database('./admins.sqlite3', sqlite3.OPEN_READWRITE , err => {
+const db = new sqlite3.Database('./database/admins.sqlite3', sqlite3.OPEN_READWRITE , err => {
     if (err)
         return console.error(err.message)
     console.log("[Database] > Connected to SQLite Database")
@@ -40,9 +40,11 @@ function rmAdmin(user_id){
                     db.run(`DELETE FROM admins WHERE user_id = ?`, user_id, err => {
                         if (err) reject(err)
 
-                        resolve(false)
+                        resolve(true)
                     })
                 }
+                else
+                    resolve(false)
             })
     })
 }
