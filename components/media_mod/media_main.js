@@ -8,12 +8,6 @@ module.exports = (msg) => {
         .setLabel('Warn')
         .setStyle('DANGER')
     )
-    // .addComponents(
-    //     new MessageButton()
-    //     .setCustomId(`mute-btn-${msg.id}-${msg.author.id}-${msg.channel.id}`)
-    //     .setLabel('Mute')
-    //     .setStyle('SECONDARY')
-    // )
     .addComponents(
         new MessageButton()
         .setCustomId(`delete-btn-${msg.id}-${msg.author.id}-${msg.channel.id}`)
@@ -22,9 +16,16 @@ module.exports = (msg) => {
     )
     .addComponents(
         new MessageButton()
+        .setCustomId(`mute-btn-${msg.id}-${msg.author.id}-${msg.channel.id}`)
+        .setLabel('Mute')
+        .setStyle('DANGER')
+    )
+    .addComponents(
+        new MessageButton()
         .setCustomId(`pass-btn-${msg.id}-${msg.author.id}-${msg.channel.id}`)
         .setLabel('Pass')
         .setStyle('SUCCESS')
     )
+
     return choices_btns
 }
