@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
 require('dotenv').config();
-const bot = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
+// const bot = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
 const prefix = (process.env.PREFIX.length > 0) ? process.env.PREFIX : "$"
 
 
 module.exports = {
     name: 'help',
-    description: "this is a bullshit command",
+    description: "this is a help command",
     execute(msg, args, bot = null) {
         const helpEmbed = new Discord.MessageEmbed()
         .setColor('#0099ff')

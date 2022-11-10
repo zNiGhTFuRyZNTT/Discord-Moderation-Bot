@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
+// const bot = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] });
 
 module.exports = async (channel, author_id, media_url, target_channel_id, choices_btns) => {
     const Embed = new Discord.MessageEmbed()

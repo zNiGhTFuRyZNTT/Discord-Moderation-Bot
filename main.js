@@ -1,6 +1,15 @@
 require('dotenv').config();
 const Discord = require('discord.js');
-const bot = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS, Discord.Intents.FLAGS.GUILD_MESSAGES] })
+require('discord-buttons')(client);
+
+const bot = new Discord.Client({
+	intents: [
+		Discord.GatewayIntentBits.Guilds,
+		Discord.GatewayIntentBits.GuildMessages,
+		Discord.GatewayIntentBits.MessageContent,
+		Discord.GatewayIntentBits.GuildMembers,
+	],
+});
 const handlers = ['command_handler', 'event_handler', 'function_handler', 'component_handler']
 // - -- --- < ---- > --- -- -
 bot.commands = new Discord.Collection()
